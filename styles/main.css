@@ -1,0 +1,153 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #3d1f91;
+    --peach:  #fa959d;
+    --darkpeach: #d46a72;
+    --gray: #a2a2a2;
+    --black: #2b2b2b;
+    --white: #ffffff;
+}
+
+::selection {
+    background-color: var(--peach);
+    color: var(--white);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    position: relative;
+    padding: 2rem;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 600;
+    margin: 0.1rem 0 1rem 0;
+    padding: 0;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+p {
+    color: var(--gray);
+    margin: 0.2rem 0;
+    font-size: 1rem;
+    padding: 0;
+    line-height: 1.5rem;
+}
+
+.text-section {
+    max-width: 46%;
+    margin: 6rem;
+    padding: 0;
+}
+
+.text-section p:nth-child(1) {
+    color: var(--purple);
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+
+.contact-cards {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.contact-cards p {
+    line-height: 1.1rem;
+    font-size: 0.9rem;
+}
+
+.contact-icon {
+    padding: 0.8rem;
+    background: var(--purple);
+    border-radius: 6px;
+    margin-right: 1rem;
+    width: 60px;
+}
+
+.form-section {
+    margin: 6rem;
+}
+
+
+form {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--purple);
+    overflow: hidden;
+    height: 569px;
+    width: 100%;
+    padding: 2.5rem;
+    border-radius: 6px;
+}
+
+.half-sphere {
+    position: absolute;
+    top: 65px;
+    right: 65px;
+    z-index: -1;
+    width: 130px;
+}
+
+.single-dots {
+    position: absolute;
+    top: 180px;
+    right: 25px;
+    z-index: -1;
+    width: 160px;
+}
+
+.multi-dots {
+    position: absolute;
+    top: 580px;
+    right: 468px;
+    z-index: -1;
+    width: 160px;
+}
+
+input, textarea {
+    width: 100%;
+    border: 0;
+    border-radius: 3px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: 0;
+}
+
+textarea {
+    height: 46%;
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: var(--peach);
+    color: var(--white);
+}
+
+input[type="submit"]:hover {
+    background-color: var(--darkpeach);
+    transition: 0.3s ease-in;
+    color: var(--white);
+}
